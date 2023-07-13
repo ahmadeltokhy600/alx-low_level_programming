@@ -3,11 +3,9 @@
 
 
 /**
-
-*main - A progrsm that prints a line with puts function
-
-*Return: Alawys 0 (Success)
-
+* main - prints "programming is like building a multilingual
+* puzzle, followed by a newline.
+* Return: Always 0.
 */
 
 int main(void)
