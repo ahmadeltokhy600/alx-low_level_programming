@@ -1,4 +1,4 @@
 #!/bin/bash
-gcc.exe file.cpp -S -masm=intel -mcosole -o file.exe   $CFILE 
+gcc -S -masm=intel $C_FILE 
 
 
