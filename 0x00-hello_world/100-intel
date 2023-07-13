@@ -1,3 +1,4 @@
 #!/bin/bash
-gcc $CFILE -o cisfun
+gcc -S -masm=intel $CFILE
+
 
