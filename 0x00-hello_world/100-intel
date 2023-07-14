@@ -1,4 +1,7 @@
 #!/bin/bash
-gcc -S -masm=intel $C_FILE 
+CFILE="main.c""
+ASSEMBLY_FILE="${CFILE%.*}.s
+gcc -S -masm=intel -o
+ASSEMBLY_FILE$CFILE
 
 
