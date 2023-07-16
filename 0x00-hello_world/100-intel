@@ -1,5 +1,6 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE
+CFILE="$CFILE" gcc -S -masm=intel "$CFILE" -o "
+${CFILE%.c}.s"
 
 
 
