@@ -1,36 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/**
- * _strdup - duplicate to new memory space location
- * @str: char
- * Return: 0
- */
-char *_strdup(char *str) {
+
+char *_strdup(char *str)
+{
     if (str == NULL) {
         return NULL;
     }
 
-    char *duplicate = malloc(strlen(str) + 1);
-    if (duplicate == NULL) {
-        return NULL;  // Insufficient memory
+    // Get the length of the input string
+    size_t len = strlen(str);
+
+    // Allocate memory for the duplicate string
+    char *dup = (char *)malloc((len + 1) * sizeof(char));
+
+    if (dup == NULL) {
+        return NULL;
     }
 
-    strcpy(duplicate, str);
-    return duplicate;
-}
+    // Copy the input string into the duplicate string
+    strcpy(dup, str);
 
-int main() {
-    char str[] = "Hello, World!";
-    char *duplicate = _strdup(str);
-
-    if (duplicate == NULL) {
-        printf("Insufficient memory\n");
-    } else {
-        printf("Original: %s\n", str);
-        printf("Duplicate: %s\n", duplicate);
-        free(duplicate);
-    }
-
-    return 0;
+    return dup;
 }
