@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
+/*  
+ */
 char *str_concat(char *s1, char *s2) {
     // Check if either string is null and treat it as an empty string
     if (s1 == NULL) {
